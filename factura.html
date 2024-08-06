@@ -1,0 +1,572 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    *{
+        font-family: "Poppins", sans-serif;
+    }
+    img{
+        height: 60px;
+        margin-left: 60px;
+        justify-content: center;
+        
+    }
+    .footer{
+        background-color: black;
+        width: 101.03%;
+        height: 200px;
+        margin-left: -7.7px;
+        margin-bottom: -8px;
+        padding-top: 55px;
+        display: flex;
+        margin-top: 100px;
+    }
+    .textFooterTitle{
+        font-family: "Poppins", sans-serif;
+        font-size: 45px;
+        width: 20%;
+        margin-left:0px ;
+        text-align: center;
+        color: white;
+        margin-top: 15px;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .icons{
+        margin-left: -60px;
+        margin-top: 55px;
+        
+    }
+    .hrspace{
+        width: 20%;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .contact{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        width: 20%px;
+        margin-left: -20px;
+        text-align: right;
+    }
+    
+    .hr3{
+        margin-top: 10vh;
+        height:80vh;
+        width:.4vw;
+        border-width:0;
+        color:black;
+        background-color:black;
+    }
+    
+    .mainSpace{
+    
+       height: 715px;
+       display: flex;
+       width: 100%; 
+       margin: auto;
+
+    }
+    .inputSpace{
+        width: 281.25px;
+        justify-content: center;
+        margin: auto;
+    }
+    .leftSpace{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: 600px;
+        width: 50%;
+        
+    }
+    .rightSpace{
+        margin-top: -9px;
+        height: 715px;
+        justify-content: center;
+        text-align: center;
+        
+        margin-right:-9px ;
+        width: 50%;
+        }
+    .sideInput{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        font-size: 15px;
+        font-weight: 300;
+        color: #555;
+    }
+
+    input[type=text]:focus {
+    border: 2px solid #555;
+    }
+    .sideButton{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: black;
+        color: white;
+    }
+    
+    .space{
+        width: 200px;
+    }
+    
+    .start{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+
+    }
+    .startText{
+        margin: auto;
+        justify-content: center;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .between{
+        height: 50px;
+    }
+    .espacioTabla{
+        margin: auto;
+        width: 810.03px;
+        justify-content: center;
+        
+    }
+    .espacioTablaPlatillo{
+        margin: auto;
+        width: 353.88px;
+        justify-content: center;
+        
+    }
+    td{
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        margin-left:10px;
+    }
+    .secondSpace{
+        margin-top: 50px;
+    }
+    .secondStart{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        width: 414px;
+        margin-bottom: 20px;
+    }
+    .tdspace{
+        
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 5px;
+        width: 5px;
+        
+    }
+    .sideInput2{
+        font-size: 15px;
+        font-weight: 300;
+        color: #555;
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        padding-top: 10px;
+    }
+    h3{
+        margin-top: 90px;
+    }
+</style>
+<body>
+    <div class="mainSpace">
+        <div class="leftSpace">
+            <div class="start"><a href="/">Taste of Italy</a></div>
+            <p class="startText"> Ingresa acá los datos de la factura</p>
+            <div class="between"></div>
+                <div class="inputSpace">
+                    <input class="sideInput" type="text" placeholder="Escriba el identificador" id="identificador"/>
+                    <input class="sideInput" type="text" placeholder="Escriba la fecha" id="fecha"/>
+                    <input class="sideInput" type="text" placeholder="Escriba la cantidad de horas" id="cantidadHorasTrabajo"/>
+                    <div class="sideInput2">Seleccione el cliente <select id = "cargadepersonas" onchange="escojePersona()"></select></div>
+                    <input type="text"  class="sideInput" placeholder="Monto total" id="montoTotal" disabled/>
+                    <input class="sideButton" type="button" value="Guardar" onclick="guarda()"/>
+                </div>
+            </div>
+
+            <div class="hrspace">
+                <hr class="hr3">
+            </div>
+            
+            <div class="rightSpace">
+                <h3>Seleccione los Platillos </h3>
+                <div id="espacioTablaPlatillo" class="espacioTablaPlatillo">
+                    <table>
+                    <thead>
+                    <tr>
+                        <td>Identificador</td>
+                        <td class="tdspace"></td>
+                        <td>Nombre</td>
+                        <td class="tdspace"></td>
+                        <td>Precio</td>
+                        <td class="tdspace"></td>
+                        <td>Agregar</td>
+                        
+
+                    </tr>
+                    </thead>
+                    <tbody id="cuerpoTablaPlatillo">
+                    </tbody>
+                    </table>
+                    </div>
+                    <div id="listadeplatilloagregados">
+
+                    </div>
+            </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="espacioTabla" class="espacioTabla">
+  
+    <table>
+    <thead>
+    <tr>
+    <td>Identificador</td>
+    <td class="tdspace"></td>
+    <td>Fecha</td>
+    <td class="tdspace"></td>
+    <td>Monto Total</td>
+    <td class="tdspace"></td>
+    <td>Cantidad de Horas </td>
+    <td class="tdspace"></td>
+    <td>Reservado por</td>
+    
+    </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+    </tbody>
+    </table>
+    </div>
+
+    <div class="footer">
+        <h1 class="textFooterTitle">
+            Nuestras Redes
+        </h1>
+        <div class="hrspace">
+            <hr class="hr2">
+        </div>
+        
+        <div class="icons">
+            <img src="/instagram">
+            <img src="/facebook">
+            <img src="/tik-tok">
+        </div>
+        <div class="hrspace">
+            <hr class="hr2">
+        </div>
+        
+        <div class="contact">
+            <p>Nuestro correo electrónico:</p>
+            <p>tasteofitaly@gmail.com</p>
+            <p> Nuestro número de teléfono:</p>
+            <p>5468-7845</p>
+
+        </div>
+    </div>
+
+    
+
+<script type="text/javascript">
+
+    var montoTotal = 0
+    // vector que guarda la lista de platillos
+    var listadePlatillo =[]
+
+        //Funcion para cargar los datos de los platillos ya guardados
+        function cargarDatosPlatillo() {
+        // Crear un nuevo objeto para enviar datos (aunque no se usa en esta función)
+        var objetoaenviar = new Object();
+                        
+        try {
+            // Crear una nueva instancia de XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+            // Configurar la solicitud HTTP GET para la URL '/platillo'
+            xhr.open('GET', '/platillo');
+            // Establecer el encabezado de la solicitud para especificar que el contenido es JSON
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            // Definir la función a ejecutar cuando la solicitud se complete
+            xhr.onload = function() {
+                // Verificar si la solicitud se completó con éxito (código de estado 200)
+                if (xhr.status == 200) {
+                    // Analizar la respuesta JSON y mostrarla en la consola
+                    console.log(JSON.parse(xhr.responseText));
+                    // Llamar a la función rellenaTablaPlatillo con los datos obtenidos
+                    rellenaTablaPlatillo(JSON.parse(xhr.responseText));
+                } else {
+                    // Mostrar el objeto xhr en la consola en caso de error
+                    console.log(xhr);
+                }
+            };
+            // Enviar la solicitud
+            xhr.send();
+        } catch (err) {
+            // Capturar y mostrar cualquier error que ocurra durante el proceso
+            console.log(err.message);
+        }
+    }
+        //Funcion para cargar los datos de los platillos ya guardados y mostrarlos 
+        function rellenaTablaPlatillo(vector)
+        {
+        document.getElementById("cuerpoTablaPlatillo").innerHTML =""
+        document.getElementById("cuerpoTablaPlatillo").innerHTML += "<tr>"
+        for (var elemento in vector)
+            {
+                document.getElementById("cuerpoTablaPlatillo").innerHTML += "<td>" + vector[elemento].identificador + "</td><td class='tdspace'></td><td>"+ vector[elemento].nombre  + "</td><td class='tdspace'></td><td>"+ vector[elemento].precioxUnidad  + "</td><td class='tdspace'></td><td><input type= 'button' value = 'Agregar' onclick= 'agregarPlatillo(\""+ vector[elemento].identificador +"\",\""+ vector[elemento].precioxUnidad +"\")' /></td><td>"
+            }
+            document.getElementById("cuerpoTablaPlatillo").innerHTML += "</tr>"
+        }
+        //Funcion para cargar los datos de las facturas ya guardados
+        function cargarDatos()
+            {
+            var objetoaenviar = new Object();
+                        
+                try
+                    {
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('GET','/factura');
+                        xhr.setRequestHeader('Content-Type','application/json');
+                        xhr.onload = function()
+                        {
+                        if(xhr.status == 200)
+                            {
+                                console.log(JSON.parse(xhr.responseText));
+                                rellenaTabla(JSON.parse(xhr.responseText))
+                            }
+                        else
+                            {
+                                console.log(xhr);
+                            }
+                        };
+                        xhr.send();
+                        }
+                catch(err)
+                    {
+                        console.log(err.message);
+                    }
+            }
+        //Funcion para cargar los datos de las personas ya guardados
+        function cargarDatosPersonas()
+        {
+        var objetoaenviar = new Object();
+                    
+            try
+                {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET','/persona');
+                    xhr.setRequestHeader('Content-Type','application/json');
+                    xhr.onload = function()
+                    {
+                    if(xhr.status == 200)
+                        {
+                            console.log(JSON.parse(xhr.responseText));
+                            rellenaselectPersona(JSON.parse(xhr.responseText))
+                        }
+                    else
+                        {
+                            console.log(xhr);
+                        }
+                    };
+                    xhr.send();
+                    }
+            catch(err)
+                {
+                    console.log(err.message);
+                }
+        }
+        //Funcion para cargar los datos de las personas y mostrarlas en el select
+        function rellenaselectPersona(vector)
+
+        {
+        document.getElementById("cargadepersonas").innerHTML =""
+        for (var elemento in vector)
+            {
+                document.getElementById("cargadepersonas").innerHTML += "<option label = " + vector[elemento].cedula + " id = " + vector[elemento].cedula + " value = " + vector[elemento].cedula + ">" + vector[elemento].cedula + " - " + vector[elemento].nombre + " </option>"
+            }
+           
+        }
+        //Funcion para guardar los datos de las facturas
+        function guarda()
+
+
+        {
+            
+            var objetoaenviar = new Object();
+            objetoaenviar.identificador = document.getElementById("identificador").value
+            objetoaenviar.fecha = document.getElementById("fecha").value        
+            objetoaenviar.montoTotal = document.getElementById("montoTotal").value
+            objetoaenviar.cantidadHoras = document.getElementById("cantidadHorasTrabajo").value  
+            objetoaenviar.clienteFactura = document.getElementById("cargadepersonas").value
+           
+          
+            try
+                {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('PUT','/factura');
+                    xhr.setRequestHeader('Content-Type','application/json');
+                    xhr.onload = function()
+                    {
+                    if(xhr.status == 200)
+                        {
+                            console.log(JSON.parse(xhr.responseText));
+                            alert('Guardado')
+                            GuardaTodoslosPlatillos()
+                            
+                            rellenaTabla(JSON.parse(xhr.responseText))
+
+                        }
+                    else
+                        {
+                            console.log(xhr);
+                        }
+                    };
+                    xhr.send(JSON.stringify(objetoaenviar));
+                    }
+            catch(err)
+                {
+                    console.log(err.message);
+                }
+        }
+        //Funcion para cargar los datos de la factura creada
+        function rellenaTabla(vector)
+        {
+        document.getElementById("cuerpoTabla").innerHTML =""
+        document.getElementById("cuerpoTabla").innerHTML += "<tr>"
+        for (var elemento in vector)
+            {
+              
+                document.getElementById("cuerpoTabla").innerHTML += "<td>" + vector[elemento].identificador + "</td><td class='tdspace'></td><td>"+ vector[elemento].fecha  +"</td><td class='tdspace'></td><td>"+ vector[elemento].montoTotal  +"</td><td class='tdspace'></td><td>"+ vector[elemento].cantidadHoras  + "</td><td class='tdspace'></td><td>"+ vector[elemento].clienteFactura  + "</td>"
+            }
+            document.getElementById("cuerpoTabla").innerHTML += "</tr>"
+        }
+        //Funcion para elegir y guardar a la persona en la factura
+        function escojePersona()
+        {
+            var select = document.getElementById('cargadepersonas');
+            var text = select.options[select.selectedIndex].innerHTML;
+            
+            
+
+
+        }
+        //Funcion para agregar los platillos y hacer los calculos del precio
+        function agregarPlatillo(identificador, precioxUnidad )
+        {
+            listadePlatillo.push(identificador)
+            montoTotal = montoTotal + parseFloat( precioxUnidad)
+            document.getElementById("montoTotal").value = montoTotal
+            document.getElementById("listadeplatilloagregados").innerHTML = ""
+            for(var elemento in listadePlatillo)
+            {
+                document.getElementById("listadeplatilloagregados").innerHTML += listadePlatillo[elemento] + "<hr>"
+            }
+        }
+        //Funcion para guardar una lista de los platillos comprados en esa factura
+        function GuardaTodoslosPlatillos()
+        {
+            for(var elemento in listadePlatillo)
+            {
+            var objetoaenviar = new Object();
+            objetoaenviar.identificadorFactura = document.getElementById("identificador").value
+            objetoaenviar.identificadorRepuesto = listadePlatillo[elemento]       
+          
+            try
+                {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('PUT','/facturaPlatillo');
+                    xhr.setRequestHeader('Content-Type','application/json');
+                    xhr.onload = function()
+                    {
+                    if(xhr.status == 200)
+                        {
+                            console.log(JSON.parse(xhr.responseText));
+                            alert('Guardados platillo ' + listadePlatillo[elemento])
+                           
+                        }
+                    else
+                        {
+                            console.log(xhr);
+                        }
+                    };
+                    xhr.send(JSON.stringify(objetoaenviar));
+                    }
+            catch(err)
+                {
+                    console.log(err.message);
+                }
+             }
+        }
+        
+        //Llama a las funciones que cargan los platillos, personas y facturas ya existentes y los muestran
+        cargarDatosPersonas()
+        cargarDatosPlatillo()
+        cargarDatos()
+        
+
+</script>
+</body>
+</html>

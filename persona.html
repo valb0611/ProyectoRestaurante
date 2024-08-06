@@ -1,0 +1,462 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    img{
+        height: 60px;
+        margin-left: 60px;
+        justify-content: center;
+        
+    }
+    .footer{
+        background-color: black;
+        width: 101.03%;
+        height: 200px;
+        margin-left: -7.7px;
+        margin-bottom: -8px;
+        padding-top: 55px;
+        display: flex;
+        margin-top: 100px;
+    }
+    .textFooterTitle{
+        font-family: "Poppins", sans-serif;
+        font-size: 45px;
+        width: 20%;
+        margin-left:0px ;
+        text-align: center;
+        color: white;
+        margin-top: 15px;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .icons{
+        margin-left: -60px;
+        margin-top: 55px;
+        
+    }
+    .hrspace{
+        width: 20%;
+    }
+    .hr2{
+        height:20vh;
+        width:.4vw;
+        border-width:0;
+        color:white;
+        background-color:white;
+    }
+    .contact{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        width: 20%px;
+        margin-left: -20px;
+        text-align: right;
+    }
+
+    .mainSpace{
+    
+       height: 715px;
+       display: flex;
+       width: 100%; 
+       margin: auto;
+
+    }
+    .inputSpace{
+        width: 281.25px;
+        justify-content: center;
+        margin: auto;
+    }
+    .leftSpace{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: 600px;
+        width: 50%;
+        
+    }
+    .rightSpace{
+        margin-top: -9px;
+        height: 715px;
+        justify-content: center;
+        text-align: center;
+        
+        margin-right:-9px ;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        --opacidad-negro: 0.8;
+        background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/sidePic);
+    }
+    .sideInput{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+
+    input[type=text]:focus {
+    border: 2px solid #555;
+    }
+    .sideButton{
+        margin: 0 auto;
+        width: 281.25px;
+        height: 45px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: black;
+        color: white;
+    }
+    
+    .space{
+        width: 200px;
+    }
+    
+    .start{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+
+    }
+    .startText{
+        margin: auto;
+        justify-content: center;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .between{
+        height: 50px;
+    }
+    .espacioTabla{
+        margin: auto;
+        width: 558.89px;
+        justify-content: center;
+        
+    }
+    td{
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        margin-left:10px;
+    }
+    .secondSpace{
+        margin-top: 50px;
+    }
+    .secondStart{
+        margin: auto;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        width: 414px;
+        margin-bottom: 20px;
+    }
+    .tdspace{
+        
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 5px;
+        width: 5px;
+    }
+</style>
+
+<body>
+    
+    
+<div class="mainSpace">
+    <div class="leftSpace">
+        <div class="start"><a href="/">Taste of Italy</a></div>
+        <p class="startText"> Ingresa acá los datos de los clientes</p>
+        <div class="between"></div>
+        <div class="inputSpace">
+            <input class="sideInput" id= "cedula" type="text" placeholder = "Escriba la cedula"/>
+            <input class="sideInput" id= "nombre" type="text" placeholder = "Escriba el nombre"/>
+            <input class="sideInput" id= "apellidos" type="text" placeholder = "Escriba los apellidos"/>
+            <input class="sideInput" id= "correo" type="text" placeholder = "Escriba el correo"/>
+            <input class="sideInput" id= "telefono" type="text" placeholder = "Escriba el telefono"/>
+            <input class="sideButton"id="btnaccion"  type="button" value = "Ingresar" onclick= "guardar()"/>
+        </div>
+        
+        </div>
+        
+        <div class="rightSpace">
+        
+        </div>
+</div>
+<div class="secondSpace">
+    <div class="secondStart">
+        Lista de Clientes
+    </div>
+    <div id="espacioTabla" class="espacioTabla">
+        <table>
+        <thead>
+        <tr>
+        <td>Cedula</td>
+        <td class="tdspace"></td>
+        <td>Nombre</td>
+        <td class="tdspace"></td>
+        <td>Apellidos</td>
+        <td class="tdspace"></td>
+        <td>Correo</td>
+        <td class="tdspace"></td>
+        <td>Telefono</td>
+        <td class="tdspace"></td>
+        <td>Modificar</td>
+        <td class="tdspace"></td>
+        <td>Eliminar</td>
+        </tr>
+        
+        </thead>
+        <tbody id="cuerpoTabla">
+        </tbody>
+        </table>
+    
+    </div>   
+
+</div>
+
+
+
+    <div class="footer">
+        <h1 class="textFooterTitle">
+            Nuestras Redes
+        </h1>
+        <div class="hrspace">
+            <hr class="hr2">
+        </div>
+        
+        <div class="icons">
+            <img src="/instagram">
+            <img src="/facebook">
+            <img src="/tik-tok">
+        </div>
+        <div class="hrspace">
+            <hr class="hr2">
+        </div>
+        
+        <div class="contact">
+            <p>Nuestro correo electrónico:</p>
+            <p>tasteofitaly@gmail.com</p>
+            <p> Nuestro número de teléfono:</p>
+            <p>5468-7845</p>
+
+        </div>
+    </div>
+
+
+
+<script>
+    //vector que almacena la lista de personas guardadas
+    listadepersonas=[]
+    //Funcion para cargar los datos de los platillos ya guardados
+    function cargarDatos()
+    {
+    var objetoaenviar = new Object();
+                
+        try
+            {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET','/persona');
+                xhr.setRequestHeader('Content-Type','application/json');
+                xhr.onload = function()
+                {
+                if(xhr.status == 200)
+                    {
+                        console.log(JSON.parse(xhr.responseText));
+                        rellenaTabla(JSON.parse(xhr.responseText))
+                    }
+                else
+                    {
+                        console.log(xhr);
+                    }
+                };
+                xhr.send();
+                }
+        catch(err)
+            {
+                console.log(err.message);
+            }
+    }
+    //Funcion para cargar los datos de los platillos ya guardados y mostrarlos 
+    function rellenaTabla(vector)
+    {
+    listadepersonas = vector
+    document.getElementById("cuerpoTabla").innerHTML =""
+    document.getElementById("cuerpoTabla").innerHTML += "<tr>"
+    for (var elemento in vector)
+        {
+            document.getElementById("cuerpoTabla").innerHTML += "<td>" + vector[elemento].cedula + "</td><td></td><td>" + vector[elemento].nombre  + "</td><td></td><td>" + vector[elemento].apellidos  + "</td><td></td><td>" + vector[elemento].correo  + "</td><td></td><td>"+ vector[elemento].telefono  + "</td><td></td><td><input type= 'button' value = 'Modificar' onclick= 'modificar("+ vector[elemento].cedula +")' /></td><td></td><td><input type= 'button' value = 'Eliminar' onclick= 'eliminar(" + vector[elemento].cedula + ")' /></td>"
+        }
+        document.getElementById("cuerpoTabla").innerHTML += "</tr>"
+    }
+    //Funcion para guardar los datos de las facturas
+    function guardar()
+    {
+        var objetoaenviar = new Object();
+        objetoaenviar.cedula = document.getElementById("cedula").value
+        objetoaenviar.nombre = document.getElementById("nombre").value
+        objetoaenviar.apellidos = document.getElementById("apellidos").value
+        objetoaenviar.correo = document.getElementById("correo").value
+        objetoaenviar.telefono = document.getElementById("telefono").value        
+                
+        try
+            {
+                var xhr = new XMLHttpRequest();
+                xhr.open('PUT','/persona');
+                xhr.setRequestHeader('Content-Type','application/json');
+                xhr.onload = function()
+                {
+                if(xhr.status == 200)
+                    {
+                        console.log(JSON.parse(xhr.responseText));
+                        alert('Guardado')
+                        rellenaTabla(JSON.parse(xhr.responseText))
+
+                    }
+                else
+                    {
+                        console.log(xhr);
+                    }
+                };
+                xhr.send(JSON.stringify(objetoaenviar));
+                }
+        catch(err)
+            {
+                console.log(err.message);
+            }
+    }
+    //Funcion para modificar los datos de platillos de la base de datos
+    function modificar(cedula)
+    {
+    if (window.confirm("Desea modificar el dato?")) {
+        var objetoEncontrado = listadepersonas.filter(obj => {
+                return obj.cedula === String(cedula)
+                })
+        document.getElementById("cedula").value = objetoEncontrado[0].cedula
+        document.getElementById("nombre").value = objetoEncontrado[0].nombre
+        document.getElementById("apellidos").value = objetoEncontrado[0].apellidos
+        document.getElementById("correo").value = objetoEncontrado[0].correo
+        document.getElementById("telefono").value = objetoEncontrado[0].telefono    
+        document.getElementById('btnaccion').value = 'Modificar'
+        document.getElementById('btnaccion').setAttribute( "onClick", "modificaenbd()" );          
+    }
+
+
+    }
+    //Funcion para modificar los datos de platillos de la base de datos
+    function modificaenbd() {
+    // Crear un nuevo objeto para enviar los datos
+    var objetoaenviar = new Object();
+    
+    // Obtener los valores de los campos del formulario y asignarlos al objeto
+    objetoaenviar.cedula = document.getElementById("cedula").value;
+    objetoaenviar.nombre = document.getElementById("nombre").value;
+    objetoaenviar.apellidos = document.getElementById("apellidos").value;
+    objetoaenviar.correo = document.getElementById("correo").value;
+    objetoaenviar.telefono = document.getElementById("telefono").value;
+                        
+    try {
+        // Crear una nueva instancia de XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+        // Configurar la solicitud HTTP POST para la URL '/persona'
+        xhr.open('POST', '/persona');
+        // Establecer el encabezado de la solicitud para indicar que el contenido es JSON
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        
+        // Definir la función a ejecutar cuando la solicitud se complete
+        xhr.onload = function() {
+            // Verificar si la solicitud se completó con éxito (código de estado 200)
+            if (xhr.status == 200) {
+                // Analizar la respuesta JSON y mostrarla en la consola
+                console.log(JSON.parse(xhr.responseText));
+                // Mostrar un mensaje de alerta indicando que la modificación fue exitosa
+                alert('Modificado');
+                // Llamar a la función rellenaTabla con los datos obtenidos
+                rellenaTabla(JSON.parse(xhr.responseText));
+                // Cambiar el valor del botón de acción a 'Guardar'
+                document.getElementById('btnaccion').value = 'Guardar';
+                // Actualizar el atributo onClick del botón para que llame a la función 'guardar'
+                document.getElementById('btnaccion').setAttribute("onClick", "guardar()");
+                // Limpiar los campos del formulario
+                document.getElementById("cedula").value = "";
+                document.getElementById("nombre").value = "";
+                document.getElementById("apellidos").value = "";
+                document.getElementById("correo").value = "";
+                document.getElementById("telefono").value = "";
+            } else {
+                // Mostrar el objeto xhr en la consola en caso de error
+                console.log(xhr);
+            }
+        };
+        // Enviar la solicitud con los datos del objeto en formato JSON
+        xhr.send(JSON.stringify(objetoaenviar));
+    } catch (err) {
+        // Capturar y mostrar cualquier error que ocurra durante el proceso
+        console.log(err.message);
+    }   
+}
+    //Funcion para eliminar los datos de platillos de la base de datos
+    function eliminar(cedula)
+    {
+    if (window.confirm("Desea eliminar el dato?")) {
+        var objetoaenviar = new Object();
+        objetoaenviar.cedula = String(cedula)       
+        objetoaenviar.nombre = ""
+        objetoaenviar.apellidos = ""
+        objetoaenviar.correo = ""
+        objetoaenviar.telefono = ""           
+        try
+            {
+                var xhr = new XMLHttpRequest();
+                xhr.open('DELETE','/persona');
+                xhr.setRequestHeader('Content-Type','application/json');
+                xhr.onload = function()
+                {
+                if(xhr.status == 200)
+                    {
+                        console.log(JSON.parse(xhr.responseText));
+                        alert('Eliminado')
+                        rellenaTabla(JSON.parse(xhr.responseText))
+
+                    }
+                else
+                    {
+                        console.log(xhr);
+                    }
+                };
+                xhr.send(JSON.stringify(objetoaenviar));
+                }
+        catch(err)
+            {
+                console.log(err.message);
+            }   
+            } 
+    }
+
+cargarDatos()
+</script>
+</body>
+</html>
